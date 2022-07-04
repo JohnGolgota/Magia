@@ -40,6 +40,70 @@
             </div>
         </div>
     </header>
-    
+    <!-- No se si meter navbar real -->
+    <!-- aside es mu complicated -->
+    <article>
+        <section>
+            <h3>Adivinar un dígito con sólo multiplicar (método 1)</h3>
+            <p>Con este truco podrás adivinar el dígito seleccionado por un amigo o amiga con sólo multiplicar</p>
+        </section>
+        <section>
+            <h3>¿Qué se necesita?</h3>
+            <ul>
+                <li>Una hoja.</li>
+                <li>Una Calculadora.</li>
+                <li>Un lápiz.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>¿Cómo proceder?</h3>
+            <ol>
+                <li>Pídele a un amigo que escriba uno de los dígitos del uno (1) al nueve (9) en una hoja y que no lo muestre.</li>
+                <li>
+                    Luego, pídele que lo multiplique por el número 3; el resultado de este producto por 7; al nuevo producto por 11 y finalmente este último resultado por 13.
+                    <table>
+                        <tr>
+                            <td><input type="number" max="9" min="1" placeholder="Introduce un número del 1 al 9" id="metodoUnoIntrude"><input type="submit" value="Ejecutar" onclick="metodoUno()"></td>
+                            <td>x3=</td>
+                            <td><input type="number" placeholder="Resultado 1" min="0" id="resultadoUno"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" placeholder="Resultado 1" min="0" id="respuestaUno"></td>
+                            <td>x7=</td>
+                            <td><input type="number" placeholder="Resultado 2" min="0" id="resultadoDos"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" placeholder="Resultado 2" min="0" id="respuestaDos"></td>
+                            <td>x11=</td>
+                            <td><input type="number" placeholder="Resultado 3" min="0" id="resultadoTres"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" placeholder="Resultado 3" min="0" id="respuestaTres"></td>
+                            <td>x13=</td>
+                            <td><input type="number" placeholder="Resultado 4" min="0" id="resultadoCuatro"></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    Solicíta que te dé el resultado final de dichas multiplicaciones. Este resultado debe estar integrado por cuatro o cinco dígitos.
+                </li>
+                <li>
+                    Finalmente, para que determines el número pensado, multiplica por 37 el resultado final de las multiplicaciones del inciso 2. El resultado que obtendrás será un número integrado por seis dígitos iguales al seleccionado por tu amigo o amiga.
+                    <table>
+                        <tr>
+                            <td><input type="number" min="0" placeholder="El resultado final" id="respuestaFinal"></td>
+                            <td>x37=</td>
+                            <td><input type="number" min="0" placeholder="El numero repetido 6 Veces" id="resultadoFinal"></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    Para comprobar que adivinaste, que te muestre la hoja donde lo escribió:
+                    <input type="number" name="" id="congratulations">
+                </li>
+            </ol>
+        </section>
+    </article>
+    <script src="./Script/main.js"></script>
 </body>
 </html>
