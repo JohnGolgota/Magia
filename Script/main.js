@@ -11,8 +11,9 @@ function metodoUno(){
         document.getElementById("resultadoFinal")
     ]
 
+    let metodo1 = document.getElementById("metodoUnoIntrude")
+    metodo1 = parseInt(metodo1.value)
     let entradas = [
-        document.getElementById("metodoUnoIntrude"),
         document.getElementById("respuestaUno"),
         document.getElementById("respuestaDos"),
         document.getElementById("respuestaTres"),
@@ -21,8 +22,9 @@ function metodoUno(){
     ]
     console.log(resultados)
     for (let i = 0; i < operadores.length; i++) {
-        entradas[i].value = (entradas[i].value * operadores[i])
-        resultados[i].value = entradas[i].value
-        entradas[i+1].value = entradas[i].value
+        console.log(metodo1)
+        metodo1 = (metodo1 * operadores[i])
+        resultados[i].value = metodo1
+        entradas[i].value = metodo1
     }
 }
